@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        tools:context=".SignUp">
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="Id"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id"
+            android:layout_marginTop="25dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="25dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/xnpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pass"
+            android:layout_marginTop="25dp"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:textColor="#000"
+            android:textSize="25dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="366dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/xnpass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button"
+            android:onClick="onClick"
+            android:text="SIGN UP"
+            android:textSize="20dp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="166dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/btnsignup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#1F5E7A"
+            android:background="@drawable/button"
+            android:onClick="onClick"
+            android:text="CANCEL"
+            android:textSize="15dp"
+            tools:ignore="OnClick" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

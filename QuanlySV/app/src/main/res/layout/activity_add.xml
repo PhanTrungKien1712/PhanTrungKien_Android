@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/cardview_default_elevation"
+    android:paddingLeft="@dimen/cardview_default_radius"
+    android:paddingRight="@dimen/cardview_default_radius"
+    android:paddingTop="@dimen/cardview_default_elevation"
+    tools:context=".UpdateActivity"
+    android:background="@drawable/bg2">
+
+    <ImageView
+        android:id="@+id/imgHinhDaiDien"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img2" />
+
+    <Button
+        android:id="@+id/btnChonAnh"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgHinhDaiDien"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#1F5E7A"
+        android:drawableLeft="@android:drawable/ic_menu_gallery"
+
+        android:text="Chọn ảnh" />
+
+    <Button
+        android:id="@+id/btnChupAnh"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgHinhDaiDien"
+        android:layout_marginLeft="45dp"
+        android:layout_toRightOf="@+id/btnChonAnh"
+        android:backgroundTint="#1F5E7A"
+        android:drawableRight="@android:drawable/ic_menu_camera"
+        android:text="Chụp ảnh" />
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnChupAnh"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Mã số sinh viên"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000" />
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtId"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Tên sinh viên"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:id="@+id/edtNamSinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTen"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Năm sinh"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000" />
+    <EditText
+        android:id="@+id/edtSdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNamSinh"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Điện thoại"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColor="#000"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSdt"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtSdt"
+            android:text="Hủy"
+            android:backgroundTint="#F86060"
+            />
+        <Button
+            android:text="Lưu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtSdt"
+            android:layout_toRightOf="@+id/btnHuy"
+            android:id="@+id/btnLuu"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#1F5E7A"/>
+    </LinearLayout>
+</RelativeLayout>

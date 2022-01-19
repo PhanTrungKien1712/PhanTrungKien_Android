@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1FBFC">
+<LinearLayout
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="15dp">
+
+    <ImageView
+        android:id="@+id/imgHinhDaiDien"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã số sinh viên: "
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtId"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Họ và tên: "
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtTen"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Năm sinh: "
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtns"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại: "
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/txtSdt"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1F5E7A"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="-48dp"
+            android:backgroundTint="#F00"
+            android:text="Xóa" />
+
+        <Button
+            android:id="@+id/btnXem"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#909798"
+            android:text="Xem thông tin" />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

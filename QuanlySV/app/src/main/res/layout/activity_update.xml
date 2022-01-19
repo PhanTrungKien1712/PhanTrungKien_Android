@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/cardview_default_elevation"
+    android:paddingLeft="@dimen/cardview_default_radius"
+    android:paddingRight="@dimen/cardview_default_radius"
+    android:paddingTop="@dimen/cardview_default_elevation"
+    tools:context=".UpdateActivity"
+    android:background="#B1FBFC">
+
+    <ImageView
+        android:id="@+id/imgHinhDaiDien"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+       android:layout_margin="10dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/btnChonAnh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1F5E7A"
+            android:drawableLeft="@android:drawable/ic_menu_gallery"
+            android:text="Chọn ảnh" />
+
+        <Button
+            android:id="@+id/btnChupAnh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1F5E7A"
+            android:drawableLeft="@android:drawable/ic_menu_camera"
+            android:text="Chụp ảnh" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgHinhDaiDien"
+        android:id="@+id/Ten"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên: "
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtTen"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NamSinh"
+        android:layout_below="@+id/Ten"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm sinh: "
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtnamsinh"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DienThoai"
+        android:layout_below="@+id/NamSinh"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điện thoại: "
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtSdt"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+
+            android:inputType="phone"
+            android:textColor="#000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DienThoai"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtSdt"
+            android:text="Hủy"
+            android:backgroundTint="#F86060"
+            />
+        <Button
+            android:text="Lưu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtSdt"
+            android:layout_toRightOf="@+id/btnHuy"
+            android:id="@+id/btnLuu"
+            android:layout_marginLeft="30dp"
+            android:backgroundTint="#1F5E7A"/>
+    </LinearLayout>
+</RelativeLayout>

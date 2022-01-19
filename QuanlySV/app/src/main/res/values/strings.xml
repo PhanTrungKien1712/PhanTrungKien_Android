@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QuanlySV</string>
+    <string name="login_ok">"Đăng nhập thành công"</string>
+    <string name="login_error">"Đăng nhập thất bại"</string>
+</resources>
